@@ -24,13 +24,15 @@
         display: none;
       }
     }
-    
-    &.active {
-      #toggle-current-user.icon {
-        &:before {
-          content: "";
-          @include svg-icon(solid, bell, var(--primary-medium), 1em, 1em);
-          font-size: var(--font-up-4);
+
+    .desktop-view & {
+      &.active {
+        #toggle-current-user.icon {
+          &:before {
+            content: "";
+            @include svg-icon(solid, bell, var(--primary-medium), 1em, 1em);
+            font-size: var(--font-up-4);
+          }
         }
       }
     }
