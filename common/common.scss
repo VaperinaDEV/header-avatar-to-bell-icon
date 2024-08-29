@@ -1,0 +1,11 @@
+.d-header-icons {
+  #toggle-current-user.icon {
+    &:before {
+      content: "";
+      @include svg-icon(regular, bell, currentColor, 1em, 1em);
+    }
+    img.avatar {
+      display: none;
+    }
+  }
+}
