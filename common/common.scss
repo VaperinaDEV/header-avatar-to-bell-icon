@@ -4,8 +4,21 @@
   #toggle-current-user.icon {
     &:before {
       content: "";
-      @include svg-icon(regular, bell, currentColor, 1em, 1em);
+      @include svg-icon(solid, bell, var(--header_primary-low-mid), 1em, 1em);
+      font-size: var(--font-up-4);
     }
+    
+    .discourse-no-touch & {
+      &:focus,
+      &:hover {
+        &:before {
+          content: "";
+          @include svg-icon(solid, bell, var(--primary-medium), 1em, 1em);
+          font-size: var(--font-up-4);
+        }
+      }
+    }
+      
     img.avatar {
       display: none;
     }

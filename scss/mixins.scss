@@ -1,10 +1,9 @@
-@import "svg-icons/fontawesome/regular";
+@import "svg-icons/fontawesome/solid";
 
 $svg-prefix: 'data:image/svg+xml;utf-8,';
 
 @mixin svg-icon($icon-set, $icon-name, $icon-color, $width, $height) {
-  
-  $svg-url: $svg-prefix + map-get($regular, $icon-name);
+  $svg-url: $svg-prefix + map-get($solid, $icon-name);
   -webkit-mask-image: url($svg-url);
   
   width: $width;
